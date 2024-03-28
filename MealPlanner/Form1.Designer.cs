@@ -87,7 +87,6 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(783, 309);
             dataGridView1.TabIndex = 3;
-            dataGridView1.UseWaitCursor = true;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Meat

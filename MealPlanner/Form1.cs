@@ -12,6 +12,7 @@ namespace MealPlan
         private void Form1_Load(object sender, EventArgs e)
         {
             this.Cursor = Cursors.Arrow;
+            System.Windows.Forms.Application.UseWaitCursor = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
