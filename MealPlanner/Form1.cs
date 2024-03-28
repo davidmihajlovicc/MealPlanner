@@ -30,7 +30,7 @@ namespace MealPlan
                 Food.Quantity = decimal.Parse(textBox2.Text);
 
 
-                if (maxPrice < 2 * Food.Quantity)
+                if (maxPrice <= 2 * Food.Quantity)
                 {
                     throw new NumberTooSmallException("Your balance is too low! Please enter 2 dollars * Number of people.");
                 }
