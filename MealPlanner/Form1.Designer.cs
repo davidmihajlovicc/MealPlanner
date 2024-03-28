@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             textBox1 = new TextBox();
             button1 = new Button();
@@ -50,6 +51,7 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.Location = new Point(12, 31);
             label1.Name = "label1";
@@ -71,7 +73,7 @@
             // 
             button1.Location = new Point(695, 28);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(79, 24);
             button1.TabIndex = 2;
             button1.Text = "Generate ";
             button1.UseVisualStyleBackColor = true;
@@ -87,6 +89,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.Size = new Size(783, 309);
             dataGridView1.TabIndex = 3;
+            dataGridView1.UseWaitCursor = true;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // Meat
@@ -125,6 +128,7 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.Location = new Point(474, 411);
             label2.Name = "label2";
@@ -147,6 +151,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.Location = new Point(82, 409);
             label4.Name = "label4";
@@ -167,6 +172,7 @@
             // 
             // textBox2
             // 
+            textBox2.BackColor = SystemColors.InactiveBorder;
             textBox2.Location = new Point(515, 29);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(138, 23);
@@ -176,6 +182,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label5.Location = new Point(369, 31);
             label5.Name = "label5";
@@ -188,11 +195,12 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 8.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label6.ForeColor = Color.Red;
-            label6.Location = new Point(156, 13);
+            label6.Location = new Point(146, 11);
             label6.Name = "label6";
-            label6.Size = new Size(155, 13);
+            label6.Size = new Size(165, 15);
             label6.TabIndex = 11;
             label6.Text = "Note: minimal per person 2$";
             label6.UseWaitCursor = true;
@@ -203,6 +211,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.HighlightText;
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(800, 450);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -216,6 +225,9 @@
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(label1);
+            ForeColor = SystemColors.ActiveCaptionText;
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "MealPlaner";
             UseWaitCursor = true;
